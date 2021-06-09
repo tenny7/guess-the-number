@@ -13,5 +13,5 @@ class GuessTheNumber:
     try:
         selected_option = int(input("Press 1 and hit Enter to start game, \n"))
         u.guess_engine(selected_option, generated_number)
-    except:
-        raise TypeError(e.integer_only())
+    except TypeError:
+        print(e.integer_only())
